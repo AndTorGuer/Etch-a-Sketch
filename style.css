@@ -1,0 +1,6 @@
+#grid{
+    /* grid layout */
+    display: grid;
+    /* 3 columns layout */
+    grid-template-columns: auto, auto, auto;
+}
