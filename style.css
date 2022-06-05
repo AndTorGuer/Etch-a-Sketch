@@ -1,6 +1,22 @@
-#grid{
-    /* grid layout */
-    display: grid;
-    /* 3 columns layout */
-    grid-template-columns: auto, auto, auto;
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
 }
+
+#grid {
+    display: grid;
+    gap: 1em;
+    grid-template-rows:  repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+    padding: 1em;
+    border:  1px solid #ddd;
+    text-align: center;
+}
+
+.newGrid {
+    /* for clear button */
+}
+
